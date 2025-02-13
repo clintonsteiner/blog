@@ -20,10 +20,12 @@ export default defineConfig({
       sidebar: [
         {
           label: "Programming",
+          collapsed: true,
           autogenerate: { directory: "programming" },
         },
         {
           label: "Resonance Textbook",
+          collapsed: true,
           items: [
             { label: "Textbook Chapters", link: "resonance" },
             {
