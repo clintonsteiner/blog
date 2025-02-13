@@ -85,11 +85,13 @@ Command Output Explanation
 
 ---
 
-`echo Hello, World! | awk '{print substr($0, 1, 5)}'`{.bash} `Hello` First 5 characters
-`echo Hello, World! | awk '{print substr($2, 2, 2)}'`{.bash} `or` Use space as delim, Next 2 chars from second field
-`echo Hello, World! | awk '{print substr($0, 8)}'`{.bash} `World!` Char 8 to the end of the line.
-`echo "apple,banana,cherry" | awk -F, '{print substr($2, 1, 3)}'`{.bash}. `ban` Use comma as delim, 3 chars from second field (Corresponds to 3)
-`echo "abcdef" | awk '{print substr($0, 1, 3) "-" substr($0, 4, 3)}'`{.bash} `abc-def` Combine substrings formed by awk
+| Command                                                                     | Output    | Explanation                                            |
+| --------------------------------------------------------------------------- | --------- | ------------------------------------------------------ |
+| `bash echo Hello, World! \| awk '{print substr($0, 1, 5)}'`                 | `Hello`   | First 5 characters                                     |
+| `bash echo Hello, World! \| awk '{print substr($2, 2, 2)}'`                 | `or`      | Use space as delimiter, next 2 chars from second field |
+| `bash echo Hello, World! \| awk '{print substr($0, 8)}'`                    | `World!`  | Char 8 to the end of the line                          |
+| `bash echo "apple,banana,cherry" \| awk -F, '{print substr($2, 1, 3)}'`     | `ban`     | Use comma as delimiter, 3 chars from second field      |
+| `bash echo "abcdef" \| awk '{print substr($0, 1, 3) "-" substr($0, 4, 3)}'` | `abc-def` | Combine substrings formed by awk                       |
 
 : Common [awk]{.title-ref} Substring Examples
 

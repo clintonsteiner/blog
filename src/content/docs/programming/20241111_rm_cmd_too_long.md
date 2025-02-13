@@ -1,6 +1,5 @@
 ---
-subtitle: Fix rm to long error
-title: Easy reference for find commands I come back to
+title: Fix rm to long error
 ---
 
 `rm -rf ./*.dat`

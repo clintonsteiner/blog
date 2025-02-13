@@ -41,8 +41,8 @@ import sys
 MODULE = 'package'
 
 def printPackageVersion():
-    pass    #import package
-    #print(f"Currently loaded package version {package.version()}")
+    import package
+    print(f"Currently loaded package version {package.version()}")
 
 if 'package' in sys.modules.keys():
     # If already imported from somewhere else, remove
@@ -58,16 +58,16 @@ printPackageVersion() # outputs Version2
 import importlib.util
 spec = importlib.util.spec_from_file_location('package', '~/package1/package.py')
 mod = importlib.util.module_from_spec(spec)
-#spec.loader.exec_module(mod)
+spec.loader.exec_module(mod)
 
-#mod.version() # Outputs Version 1
-#package.version() # Outputs Version 2
+mod.version() # Outputs Version 1
+package.version() # Outputs Version 2
 
 # What about overriding the already loaded version of the module with our new version
 # Now our module versions are out of sync, to hack in Version 1 again globally
-#del sys.modules[MODULE]
-#sys.modules[MODULE] = mod
+del sys.modules[MODULE]
+sys.modules[MODULE] = mod
 
-#mod.version() # Outputs Version 1
-#package.version() # Outputs Version 1
+mod.version() # Outputs Version 1
+package.version() # Outputs Version 1
 ```

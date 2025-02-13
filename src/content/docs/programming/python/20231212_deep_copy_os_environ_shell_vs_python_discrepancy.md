@@ -121,7 +121,7 @@ StrHelpers.popenWithEnv(myEnv)
 
 ## 2. Use a contextmanager to control the modifications
 
-```python
+````python
 import os
 from contextlib import contextmanager
 
@@ -155,13 +155,14 @@ with modifiedEnv(foo='bar') as myEnv:
 
 print("Outside context managed modified environment")
 printResults()
-```
+```python
 
-    Inside context manager modified environment
+    # Inside context manager modified environment
     os.environ['foo']: bar
-    subprocess.Popen('echo $foo', shell=True, env=env): <Popen: returncode: None args: 'echo $foo'>
-    Outside context managed modified environment
-    os.environ['foo']: foo
-    bar
-    subprocess.Popen('echo $foo', shell=True, env=env): <Popen: returncode: None args: 'echo $foo'>
-    foo
+    subprocess.Popen('echo $foo', shell=True, env=env) #: <Popen: returncode: None args: 'echo $foo'>
+    # Outside context managed modified environment
+    os.environ['foo']: # foo
+    # bar
+    subprocess.Popen('echo $foo', shell=True, env=env) # : <Popen: returncode: None args: 'echo $foo'>
+    # foo
+````
