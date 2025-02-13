@@ -8,6 +8,9 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Half Stack Python",
+      editLink: {
+        baseUrl: "https://github.com/clintonsteiner/blog/edit/master/",
+      },
       social: {
         github: "https://github.com/clintonsteiner/blog",
       },
