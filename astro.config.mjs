@@ -13,6 +13,7 @@ export default defineConfig({
       },
       social: {
         github: "https://github.com/clintonsteiner/blog",
+        linkedin: "https://www.linkedin.com/in/clintonsteiner/",
       },
       logo: {
         src: "./src/assets/c3po.jpg",
