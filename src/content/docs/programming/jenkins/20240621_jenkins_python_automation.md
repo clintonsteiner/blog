@@ -9,8 +9,8 @@ import xml.etree.ElementTree as ET
 from jenkinsapi.jenkins import Jenkins
 
 jenkinsFile = 'Jenkinsfile.build'
-#with open(jenkinsFile, 'r') as file:
-#    script = file.read()
+with open(jenkinsFile, 'r') as file:
+    script = file.read()
 script = 'MockJenkinsScript'
 url = 'MockJenkinsScript'
 apikey = 'MockApiKey'
