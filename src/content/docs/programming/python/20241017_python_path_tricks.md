@@ -1,4 +1,5 @@
 ---
+publishDate: 2024-10-17
 title: PYTHONPATH Tricks
 ---
 

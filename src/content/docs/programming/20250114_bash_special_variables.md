@@ -1,4 +1,5 @@
 ---
+publishDate: 2025-01-14
 title: Bash Special Variables
 ---
 

@@ -1,4 +1,5 @@
 ---
+publishDate: 2024-11-05
 title: Example using bazel-remote-cache to host packages
 ---
 

@@ -1,4 +1,5 @@
 ---
+publishDate: 2024-10-31
 title: Example Bundling of Package with NPM
 ---
 

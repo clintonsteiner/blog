@@ -1,4 +1,5 @@
 ---
+publishDate: 2024-05-11
 title: Git Aliases
 ---
 

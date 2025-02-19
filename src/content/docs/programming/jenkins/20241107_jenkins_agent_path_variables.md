@@ -1,4 +1,5 @@
 ---
+publishDate: 2024-11-07
 title: Jenkins Troubleshooting Tips Related to Path Errors
 ---
 

@@ -1,4 +1,5 @@
 ---
+publishDate: 2023-12-12
 title: Investigating side-effect of using deepcopy to restore original os.environ state
 ---
 

@@ -1,4 +1,5 @@
 ---
+publishDate: 2024-06-21
 title: Jenkins Python Automation
 ---
 

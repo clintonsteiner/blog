@@ -1,4 +1,5 @@
 ---
+publishDate: 2024-11-11
 title: Vim Motions Notes
 ---
 
