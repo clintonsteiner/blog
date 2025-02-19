@@ -16,7 +16,7 @@ export default defineConfig({
         linkedin: "https://www.linkedin.com/in/clintonsteiner/",
       },
       logo: {
-        src: "./src/assets/c3po.jpg",
+        src: "./src/assets/logo.png",
       },
       sidebar: [
         {
