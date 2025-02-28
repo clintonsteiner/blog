@@ -7,6 +7,7 @@ title: Chezmoi Reference
 
 ```bash
 # Install chezmoi
+sh -c "$(curl -fsLS get.chezmoi.io)"
 chezmoi init git@github.com:clintonsteiner/dotfiles.git
 chezmoi apply
 ```
