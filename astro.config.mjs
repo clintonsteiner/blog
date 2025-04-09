@@ -11,10 +11,18 @@ export default defineConfig({
       editLink: {
         baseUrl: "https://github.com/clintonsteiner/blog/edit/master/",
       },
-      social: {
-        github: "https://github.com/clintonsteiner/blog",
-        linkedin: "https://www.linkedin.com/in/clintonsteiner/",
-      },
+      social: [
+        {
+          icon: "github",
+          label: "Github",
+          href: "https://github.com/clintonsteiner/blog",
+        },
+        {
+          icon: "linkedin",
+          label: "LinkedIn",
+          href: "https://www.linkedin.com/in/clintonsteiner/",
+        },
+      ],
       logo: {
         src: "./src/assets/logo.png",
       },
