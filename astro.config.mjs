@@ -33,6 +33,11 @@ export default defineConfig({
           autogenerate: { directory: "programming" },
         },
         {
+          label: "Misc",
+          collapsed: true,
+          autogenerate: { directory: "misc" },
+        },
+        {
           label: "Resonance Textbook",
           collapsed: true,
           items: [
